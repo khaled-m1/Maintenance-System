@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Maintenance.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 1140px;
+            height: 200px;
+        }
+        .auto-style6 {
+            text-decoration: none;
+        }
+        .auto-style7 {
+            color: #000000;
+        }
+        .auto-style3 {
+            width: 15%;
+            height: 23px;
+            text-align: center;
+        }
+        .auto-style4 {
+            height: 23px;
+        }
+        .auto-style8 {
+            height: 23px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td>
+                        <img class="auto-style2" src="hdr.jpeg" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="auto-style1">
+                            <tr>
+                                <td>
+                                    <table class="auto-style1">
+                                        <tr>
+                                            <td class="auto-style3" style="width: 15%"><a class="auto-style6" href="addUser.aspx"><span class="auto-style7"><strong>Add U</strong></span><strong><span class="auto-style7">ser</span></strong></a></td>
+                                            <td class="auto-style3" style="width: 15%"><strong><a class="auto-style6" href="viewNewReq.aspx"><span class="auto-style7">View New Request</span></a></strong></td>
+                                            <td class="auto-style3" style="width: 15%"><strong><a class="auto-style6" href="transformReq.aspx"><span class="auto-style7">Transform Request</span></a></strong></td>
+                                            <td class="auto-style8" style="width: 15%"><strong><a class="auto-style6" href="followUpReq.aspx"><span class="auto-style7">Follow Up Request</span></a></strong></td>
+                                            <td class="auto-style8" style="width: 15%"><strong><a class="auto-style6" href="loginPage.aspx"><span class="auto-style7">Exit</span></a></strong></td>
+                                            <td class="auto-style4" style="width: 15%"></td>
+                                            <td class="auto-style4"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <hr />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
